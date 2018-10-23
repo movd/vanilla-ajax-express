@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <title>Vanilla AJAX with Express Backend</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous" />
+    </head>
+    <body>
+    <main class="container">
+        <div class="row mt-3">
+        <h1>Vanilla AJAX with Express Backend</h1>
+            <div class="col-6">
+                <h2>POST Example</h2>
+                <strong>Input</strong>
+                <div class="input-group">
+                    <input class="form-control mt-3" type="text" name="input" placeholder="input">
+                    <button type="button" class="btn mt-3">Submit!</button>
+                </div> <!-- /.input-group --> 
+            </div>
+        </div> <!-- /.row -->
+
+        <div class="row mt-3">
+            <div class="col-3">
+                <strong>Say it loud!</strong>
+                <div id="loud"></div>
+                <!-- /#loud to output returned CAPS string from backen -->
+            </div>
+            <div class="col-3">
+                <strong>Random Number</strong>
+                <div id="randomnumber"></div>
+                <!-- /#randomnumber to output random Integer from backend -->
+            </div>
+        </div> <!-- /.row -->
+
+    </main><!-- /.container -->
+    
+    <script src="/frontend.js"></script>
+    </body>
+</html>
