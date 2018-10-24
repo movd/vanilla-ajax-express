@@ -9,7 +9,7 @@ const vanillaAjaxPost = () => {
     request.send(JSON.stringify({ input: data }))
 
     request.onload = function () {
-        if(this.status == 200){
+        if(this.readyState == 4 && this.status == 200){
             // Store POST response as JSON
             const backendOutput = JSON.parse(this.responseText)
             console.log(backendOutput)
